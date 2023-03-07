@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Restaurant Menu Card with Only HTML</title>
+    <link rel="icon" type="images/x-icon" href="images/pizza_favicon.png">
+    <style>
+        .image{
+            width: 65%;
+        }
+        .food{
+            border: 2px solid rgb(125, 109, 109);
+            border-radius: 5px;
+            padding: 25px 30px;
+            margin: 20px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .btn{
+            border-radius: 5px;
+            border: 15px solid orange;
+            background-color: orange;
+            font-weight: 700;
+            color: white;
+        }
+        @media screen and (max-width: 576px ){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+                
+            }
+            .food{
+                background-color: bisque;
+            }
+        }
+        @media screen and ( min-width: 577px) and ( max-width: 992px ){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and ( min-width: 993px) and ( max-width: 1400px) {
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- .container>.food*12>img[src="images/food.jpg"]+h2{iteam-$}+h4{Price : $00}+p>lorem30^button.btn{Order Now} -->
+    <div class="container">
+        <div class="food">
+            <img  class="image" src="images/pizza.jpg" alt="pizza">
+            <h2>iteam-1</h2>
+            <h4>Price : 100</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse unde explicabo eveniet molestias quas tempore ipsum sunt magni blanditiis perspiciatis, fuga laudantium quis deserunt voluptas! Pariatur perferendis molestiae quaerat hic.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image"src="images/white pasta.avif" alt="white pasta" >
+            <h2>iteam-2</h2>
+            <h4>Price : 200</h4>
+            <p>Fugit, eos? Pariatur, quae? Fuga, illo. Ipsa vel saepe ducimus at delectus laborum, qui magni architecto incidunt? Tenetur voluptatibus mollitia dolore totam sunt corrupti accusantium numquam natus modi illum! Tenetur.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img  class="image" src="images/pasta.avif" alt="pasta">
+            <h2>iteam-3</h2>
+            <h4>Price : 300</h4>
+            <p>In facilis placeat iste, error vero quia accusamus, quas ut ipsum blanditiis praesentium enim eveniet ducimus illo. Magnam quasi magni aut quis nihil ipsa debitis modi. Deserunt quasi culpa placeat!</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/Burger.avif" alt="Burger" >
+            <h2>iteam-4</h2>
+            <h4>Price : 400</h4>
+            <p>Quam fugit itaque dicta sequi amet, voluptatibus, at quo eius, quidem dignissimos dolorem qui ad consequatur repellat sunt nisi quia libero non suscipit sapiente ipsum? Voluptatum mollitia doloremque ullam deserunt.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/sushi.avif" alt="sushi" >
+            <h2>iteam-5</h2>
+            <h4>Price : 500</h4>
+            <p>Magni, mollitia? Eos, doloremque dicta. Perferendis iusto reiciendis rem adipisci, rerum praesentium nisi maiores, delectus doloremque sint, officiis debitis. Voluptas voluptatum voluptate impedit laudantium ipsam accusamus, repellat recusandae ea qui.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/nugget.avif" alt="nugget" >
+            <h2>iteam-6</h2>
+            <h4>Price : 600</h4>
+            <p>Eos dolore dignissimos incidunt commodi. At hic dolores quas aperiam enim eveniet atque et iure in. Maiores necessitatibus ullam dolores quas laborum corporis amet nemo, tempore vitae omnis maxime quam.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/noodless.avif" alt="noodless" >
+            <h2>iteam-7</h2>
+            <h4>Price : 700</h4>
+            <p>Dicta quis aliquid nobis eaque quos? Quae laborum sit amet minima. At ex eligendi molestias aperiam cumque quidem nisi iste inventore deleniti perferendis consequatur, dolorem suscipit, magnam dolores beatae architecto?</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/Garlic Pasta.avif" alt="Garlic Pasta" >
+            <h2>iteam-8</h2>
+            <h4>Price : 800</h4>
+            <p>Magni aut, maxime quo consequatur accusamus quisquam, delectus nostrum in quae ea dolorum doloribus tenetur id ipsam, nulla voluptatem. Eius quo blanditiis beatae quae corporis maxime eaque, id possimus. Molestiae.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/tomatoo pasta.avif" alt="tomatoo pasta" >
+            <h2>iteam-9</h2>
+            <h4>Price : 900</h4>
+            <p>Vel nostrum tenetur neque ad optio, error numquam consectetur reiciendis nam nulla est, odio, expedita assumenda quod deleniti officia voluptatum tempora quis repellendus cum. Voluptate dolor quas odit sapiente labore.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img  class="image" src="images/kabab.avif" alt="kabab">
+            <h2>iteam-10</h2>
+            <h4>Price : 1000</h4>
+            <p>Modi neque soluta, velit vero dignissimos cupiditate iusto nihil distinctio fugiat laudantium assumenda suscipit, in minima explicabo exercitationem nostrum, aperiam recusandae sed quibusdam aliquam sequi nulla laborum. Nulla, commodi magni.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/burger combo.avif" alt="burger combo" >
+            <h2>iteam-11</h2>
+            <h4>Price : 1100</h4>
+            <p>Distinctio iste maxime dicta, illo asperiores sed possimus ducimus magni, esse veniam vero accusamus pariatur inventore! Provident accusantium nemo velit quaerat odit expedita assumenda. Nulla rem porro repellendus tempora libero.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="food">
+            <img class="image" src="images/cake.avif" alt="cake" >
+            <h2>iteam-12</h2>
+            <h4>Price : 1200</h4>
+            <p>Culpa provident adipisci doloremque repellat magni distinctio explicabo tenetur consectetur, assumenda maxime pariatur ex labore inventore nemo eum? Ex neque iure in saepe, culpa est quisquam impedit dolorem sint inventore.</p>
+            <button class="btn">Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
